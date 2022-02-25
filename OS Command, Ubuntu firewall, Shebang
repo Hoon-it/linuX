@@ -1,0 +1,31 @@
+CentOS, RedHat Enterprise
+
+Cat /etc/redhat-release
+CenOS 7부터 iptables 관련 명령어가 아니라 firewall 명령어로 변경
+
+Ubuntu
+Cat /etc/lsb-release
+
+###################################
+
+Firewall
+
+방화벽 정지 후 상태 확인 : ufw disable -> ufw status
+실행 후 확인 : ufw enable -> ufw status
+
+22번 포트 허용하고 리스트 확인 : ufw allow 22 -> ufw status
+22번 포트 막고 리스트 확인 : ufw deny 22 -> ufw status
+
+방화벽 설정된 포트 삭젝하고 상태 확인하기 : ufw delete deny 22 -> ufw status
+
+sudo vi /etc/rc.local
+sudo reboot : 서버 재시작
+
+###############################
+
+Shebang
+
+#!/usr/bin/bash      #!/usr/bin/env bash
+#!/usr/bin/python    #!/usr/bin/env python
+#!/usr/bin/perl      #!/usr/bin/env perl
+#!/usr/bin/php       #!/usr/bin/env php
