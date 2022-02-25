@@ -6,8 +6,6 @@ CenOS 7부터 iptables 관련 명령어가 아니라 firewall 명령어로 변�
 Ubuntu
 Cat /etc/lsb-release
 
-###################################
-
 Firewall
 
 방화벽 정지 후 상태 확인 : ufw disable -> ufw status
@@ -20,8 +18,6 @@ Firewall
 
 sudo vi /etc/rc.local
 sudo reboot : 서버 재시작
-
-###############################
 
 Shebang
 
