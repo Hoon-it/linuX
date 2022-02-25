@@ -1,0 +1,20 @@
+**Standalone**
+
+## 독립적으로 수행되며 서비스 요청에 응답하기 위해 항시 메모리에 상주하는 데몬이다.
+## 데몬의 실행 스크립트 위치 : "/etc/inetd.d/"
+
+
+
+Inetd(Super)
+
+inetd라고 하는 특별한 데몬에 의해 간접적으로 실행되는 데몬.
+보안상의 이유로 xinetd로 수정되었으며 슈퍼데몬이라고도 한다. inetd에 어떠한 요청이 들어오면 inetd는 해당되는 데몬은 메모리에 올리고 요청을 처리한다.
+데몬의 실행 스크립트 위치 : "/etc/xinetd.d/"
+
+
+
+Ubuntu Server
+
+Ubuntu 8.10 기준으로 Server 버전이든 Desktop 버전이든 기본적으로 Super daemon이 설치되지 않는다. apt-get 명령어를 이용한 패키지를 섪치할 수 있다.
+$ sudo apt-get install netkit-intd
+상기의 명령어를 실행하면, Standalone방식과 Super daemon방식을 동시에 사용할 수 있다.
